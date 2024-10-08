@@ -1,6 +1,6 @@
 // Package Imports
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 // View Imports
 import HomeView from "../Views/Home/HomeView";
