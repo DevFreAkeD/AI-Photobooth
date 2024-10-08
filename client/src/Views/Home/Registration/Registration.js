@@ -32,7 +32,7 @@ function Registration({ userDetailAction }) {
       return;
     }
     userDetailAction(formData);
-    navigate("/avatar");
+    navigate("/#/avatar");
   };
 
   const handleInputChange = (value) => {
