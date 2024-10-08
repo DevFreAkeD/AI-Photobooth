@@ -1,4 +1,4 @@
-export const BASE_API = "http://localhost:8080/api";
+export const BASE_API = "https://ai-photobooth-56aa.onrender.com/api";
 export const BASE_API2 = "";
 
 export const validate = (name, value, type) => {
