@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+body {
+  background-image: url("./Assets/background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#root {
+  height: 100%;
+  width: 100vw;
+}
+
+.bg-container {
+  background-image: url("./Assets/background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 62px;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 91px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.sub-heading {
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@media print {
+  body {
+    visibility: hidden;
+  }
+  #section-to-print {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

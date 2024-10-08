@@ -1,0 +1,67 @@
+/* cameraview.css */
+
+.bg-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start initially */
+  position: relative;
+}
+
+.logo-container {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between; /* Logo on opposite sides */
+}
+
+.logo {
+  height: 300px; /* Adjust size of logos as needed */
+  width: 400px; /* Adjust width as necessary */
+  padding-top: 10%;
+  margin-right: 5%;
+}
+
+.img-container {
+  height: calc(100vh - 120px); /* Adjust height to shift image up */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the image vertically */
+  align-items: center;
+  margin-top: -20rem;
+}
+
+.displayed-image {
+  object-fit: cover; /* Cover the image */
+  width: 75%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Rounded corners for avatars */
+}
+
+.bttn-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    margin-top: 1rem; /* Space above buttons */
+
+}
+
+.bttn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #ff9b19;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center; /* Center the text horizontally */
+  display: inline-block; /* Ensure the button has its own block space */
+  width: 100%; /* Make the button take full width of its container */
+}
+
+.bttn:hover {
+  background-color: #faac46;
+}

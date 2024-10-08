@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144.547" height="113.51" viewBox="0 0 144.547 113.51">
+  <g id="arrow" transform="translate(144.547) rotate(90)">
+    <path id="Path_3225" data-name="Path 3225" d="M3.414,0A3.424,3.424,0,0,0,0,3.414V76.089a3.414,3.414,0,1,0,6.829,0V3.414A3.424,3.424,0,0,0,3.414,0Z" transform="translate(53.349 35.68)"/>
+    <path id="Path_3226" data-name="Path 3226" d="M56.764,0A56.764,56.764,0,0,0,34.041,108.781a3.41,3.41,0,0,0,2.731-6.248,49.943,49.943,0,1,1,39.965,0,3.41,3.41,0,0,0,2.731,6.248A56.764,56.764,0,0,0,56.764,0Z" transform="translate(0 0)"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="3.414" cy="3.414" rx="3.414" ry="3.414" transform="translate(53.349 137.718)"/>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="3.414" cy="3.414" rx="3.414" ry="3.414" transform="translate(53.349 122.371)"/>
+    <path id="Path_3227" data-name="Path 3227" d="M24.759,0A3.437,3.437,0,0,0,22.54.819L1.2,18.95a3.415,3.415,0,0,0,4.422,5.207L24.759,7.9l19.12,16.252A3.415,3.415,0,1,0,48.3,18.95L26.961.819A3.36,3.36,0,0,0,24.759,0Z" transform="translate(32.005 35.68)"/>
+  </g>
+</svg>

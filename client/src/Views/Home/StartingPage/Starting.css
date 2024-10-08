@@ -1,0 +1,48 @@
+/* Starting.css */
+.starting-view {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.logo-container {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center; /* Logo on opposite sides */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.logo {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center;
+  margin-bottom: 5rem; /* Space between logo and text */
+}
+
+.text-container {
+  margin-bottom: 2rem; /* Space between text and button */
+}
+
+.main-text {
+  font-size: 2rem; /* Size of the main text */
+}
+
+.sub-text {
+  font-size: 1.5rem; /* Size of the sub text */
+}
+
+.start-button {
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: transform 0.3s; /* Optional: Add transition for hover effect */
+  rotate: 180deg;
+}
+
+.start-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

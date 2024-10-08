@@ -1,0 +1,185 @@
+.flex-container {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  background-color: white;
+  margin: 0;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+[class^="item"] {
+  text-decoration: none;
+  margin-right: 20px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.item-5 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    transition: height 0.2s ease-out;
+    border-radius: 3px;
+  }
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      height: 4px;
+    }
+  }
+}
+
+.pop-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.pop-up-container > div {
+  width: 50%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  /* height: 20%; */
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+}
+
+/*Clearing Floats*/
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+/* Form wrapper styling */
+
+.search-wrapper {
+  margin: 50px auto 3px auto;
+  border-radius: 40px;
+  background: transparent;
+  box-shadow: 0 4px 20px -2px #e9e9e9;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Form text input */
+
+.search-wrapper input {
+  padding-left: 20px;
+  height: 20px;
+  padding: 10px 10px;
+  float: left;
+  font: bold 13px "lucida sans", "trebuchet MS", "Tahoma";
+  border: 0;
+  background: #fff;
+  border-radius: 40px;
+  border-top-style: none;
+  flex: 1;
+}
+
+.search-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+}
+
+.search-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.search-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.search-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+  border-style: none;
+}
+
+/* Form submit button */
+.search-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  font: 13px/40px "lucida sans", "trebuchet MS", "Tahoma";
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, red, #fc8dcc);
+  border-radius: 40px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.search-wrapper button:hover {
+  /*     background: #e54040; */
+}
+
+.search-wrapper button:active,
+.search-wrapper button:focus {
+  background: linear-gradient(135deg, red, #fc8dcc);
+  outline: 0;
+}
+
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before {
+  border-right-color: #c42f2f;
+}
+
+.search-wrapper button::-moz-focus-inner {
+  /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}

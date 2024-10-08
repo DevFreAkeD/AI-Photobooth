@@ -1,0 +1,103 @@
+/* SelectAvatarView.css */
+
+.bg-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start initially */
+  position: relative;
+}
+
+.logo-container {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between; /* Logo on opposite sides */
+}
+
+.logo {
+  height: 300px; /* Adjust size of logos as needed */
+  width: 400px; /* Adjust width as necessary */
+  padding-top: 10%;
+  margin-right: 5%;
+}
+
+.heading {
+  font-size: 24px; /* Heading size */
+  margin: 20px 0; /* Space above and below the heading */
+  font-weight: bold; /* Bold font for the heading */
+  text-align: center; /* Center the heading */
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  align-items: center; /* Center the rows */
+  z-index: 10;
+}
+
+.avatar-row {
+  display: flex; /* Display avatars in a row */
+  justify-content: center; /* Center the avatars horizontally */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.avatar-item {
+  margin: 0 10px; /* Space between avatars */
+  position: relative; /* Position for the tick icon */
+}
+
+/* Smooth appearing effect added here */
+.avatar-item img {
+  border-radius: 15px; /* Rounded corners for avatars */
+  width: 250px; /* Adjust width of avatars */
+  height: 250px; /* Adjust height of avatars */
+  object-fit: cover; /* Cover the image */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth scaling and opacity transition */
+  opacity: 0; /* Start invisible */
+  transform: translateY(10px); /* Start slightly below */
+  animation: fadeIn 0.5s forwards; /* Apply animation */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+.avatar-item img:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.selected {
+  border: 4px solid #ff782a; /* Highlight selected avatar */
+  box-shadow: 0 0 15px rgba(230, 117, 57, 0.5); /* Glowing effect */
+}
+
+.btn {
+  margin-top: 20px; /* Space above the button */
+  z-index: 10;
+}
+
+.btn button {
+  padding: 10px 20px; /* Padding for button */
+  font-size: 18px; /* Font size for button */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border: none; /* Remove default border */
+  background-color: #ff9b19; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+.btn button:hover:not(.disabledButton) {
+  background-color: #faac46; /* Darker shade on hover */
+}
+
+.disabledButton {
+  opacity: 0.5; /* Make the button look disabled */
+  cursor: not-allowed; /* Change cursor */
+}

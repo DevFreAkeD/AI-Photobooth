@@ -1,0 +1,72 @@
+.thankyou-container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start initially */
+    position: relative;
+  }
+  
+  .logo-container {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between; /* Logo on opposite sides */
+  }
+  
+  .logo {
+    height: 170px; /* Adjust size of logos as needed */
+    width: 400px; /* Adjust width as necessary */
+    padding-top: 10%;
+    margin-right: 5%;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 5px 0; /* Space around the image */
+    margin-top: -2rem;
+  }
+  
+  .final-image {
+    width: 100%; /* Adjust to make it a bit smaller than full screen */
+    border-radius: 15px; /* Optional rounded corners */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-top: 0rem; /* Space above buttons */
+    z-index: 10;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff9b19;
+    color: white;
+    border: none;
+    width: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #faac46;
+  }
+  
+  .thankyou-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+  
+  

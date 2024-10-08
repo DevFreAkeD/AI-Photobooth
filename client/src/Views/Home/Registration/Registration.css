@@ -1,0 +1,83 @@
+/* Registration.css */
+
+.registration-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start initially */
+  padding: 20px; /* Padding for container */
+}
+
+.logo-container {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between; /* Logos on opposite sides */
+  margin-bottom: 20px; /* Space below logos */
+}
+
+.logo {
+  height: 100px; /* Adjust size of logos as needed */
+  width: auto; /* Keep aspect ratio */
+}
+
+.heading {
+  font-size: 36px; /* Font size for the heading */
+  font-weight: bold; /* Bold text */
+  margin: 20px 0; /* Space above and below heading */
+  text-align: center; /* Center the heading */
+  margin-top: 80px;
+}
+
+.option-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gender-button {
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin: 0 20px; /* Space between buttons */
+  text-align: center; /* Center text under the images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+  border: 2px solid transparent; /* Initial border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding around the image */
+  box-shadow: none; /* No shadow initially */
+}
+
+/* Scale effect when selected */
+.gender-button.selected {
+  transform: scale(1.1); /* Scale up when selected */
+}
+
+/* Hover effect */
+.gender-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.gender-button img {
+  height: 150px; /* Adjust the size of the gender images */
+  width: auto; /* Keep aspect ratio */
+}
+
+.next-button {
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin-top: 40px; /* Space above the button */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.next-button img {
+  height: 150px; /* Adjust size of the next button image */
+  width: auto; /* Keep aspect ratio */
+  z-index: 10;
+}
+
+.next-button:hover {
+  opacity: 0.8; /* Slightly fade on hover */
+}
+
+.shifted-navbar {
+  margin-top: 20px; /* Shift the navbar down by 20px */
+}

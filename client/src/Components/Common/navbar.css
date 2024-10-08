@@ -1,0 +1,23 @@
+/* navbar.css */
+
+.navbar-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items to edges */
+    align-items: center; /* Center items vertically */
+    padding: 2px; /* Add some padding */
+    position: fixed; /* Make navbar fixed at the bottom */
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1; /* Ensure it stays above other elements */
+    margin-bottom: 2%;
+}
+
+.logo {
+    height: 40px; /* Set height of logos, adjust as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.logo:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
