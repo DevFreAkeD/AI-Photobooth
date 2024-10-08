@@ -15,14 +15,14 @@ import StrikePose from "../Views/Home/StrikePose";
 const HomeRoute = () => {
   return (
     <Routes>
-      <Route path="/camera" element={<CameraView />} />
-      <Route path="/avatar" element={<SelectAvatarView />} />
-      <Route path="/" element={<StartingView />} />
-      <Route path="/register" element={<Registration/>} />      
-      <Route path="/thankyou" element={<Thankyou />} />
-      <Route path="/result" element={<ResultView/>} />
-      <Route path="/dashboard" element={<Dashboard/>} />
-      <Route path="/pose" element={<StrikePose/>} />
+      <Route path="/#/camera" element={<CameraView />} />
+      <Route path="/#/avatar" element={<SelectAvatarView />} />
+      <Route path="/#/" element={<StartingView />} />
+      <Route path="/#/register" element={<Registration/>} />      
+      <Route path="/#/thankyou" element={<Thankyou />} />
+      <Route path="/#/result" element={<ResultView/>} />
+      <Route path="/#/dashboard" element={<Dashboard/>} />
+      <Route path="/#/pose" element={<StrikePose/>} />
     </Routes>
   );
 };
