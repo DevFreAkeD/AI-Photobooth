@@ -12,7 +12,7 @@ function StartingView({ userDetailAction }) {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    navigate("/register");
+    navigate("/#/register");
   };
 
   return (
